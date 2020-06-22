@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLog.SlackTarget", "NLog.SlackTarget\NLog.SlackTarget.csproj", "{1DE80606-D28A-4F30-B68B-F4C33AA775D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLog.SlackTarget.TestConsole", "NLog.SlackTarget.TestConsole\NLog.SlackTarget.TestConsole.csproj", "{5B1BA5E0-C6F7-4BAE-AED7-A086D9C514B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DE80606-D28A-4F30-B68B-F4C33AA775D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DE80606-D28A-4F30-B68B-F4C33AA775D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DE80606-D28A-4F30-B68B-F4C33AA775D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DE80606-D28A-4F30-B68B-F4C33AA775D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B1BA5E0-C6F7-4BAE-AED7-A086D9C514B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B1BA5E0-C6F7-4BAE-AED7-A086D9C514B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B1BA5E0-C6F7-4BAE-AED7-A086D9C514B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B1BA5E0-C6F7-4BAE-AED7-A086D9C514B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BCE75C5C-9DF3-4159-B2B7-C9505A388895}
+	EndGlobalSection
+EndGlobal
