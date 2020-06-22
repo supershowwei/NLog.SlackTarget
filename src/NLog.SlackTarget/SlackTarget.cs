@@ -43,7 +43,7 @@ namespace NLog.Targets
                                   "application/x-www-form-urlencoded")
                           };
 
-            var httpClient = HttpClientFactory.Instance.CreateClient(new Uri("https://hooks.slack.com"));
+            var httpClient = HttpClientFactory.Instance.CreateClient(new Uri($"{webhook.Scheme}{Uri.SchemeDelimiter}{webhook.Host}"));
 
             await httpClient.SendAsync(request, cancellationToken);
         }

@@ -8,6 +8,7 @@ namespace NLog.SlackTarget.TestConsole
         {
             var logger = LogManager.GetCurrentClassLogger();
 
+            logger.Info("NLog.SlackTarget Test Info");
             logger.Warn("NLog.SlackTarget Test Warn");
             logger.Error("NLog.SlackTarget Test Error");
 
