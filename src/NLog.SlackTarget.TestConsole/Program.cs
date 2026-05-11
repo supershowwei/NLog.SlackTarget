@@ -9,10 +9,14 @@ namespace NLog.SlackTarget.TestConsole
         {
             var logger = LogManager.GetCurrentClassLogger();
 
-            logger.Info("TEST: {0:yyyy-MM-dd HH:mm:ss.fff}", DateTime.Now);
-            logger.Warn("TEST: {0:yyyy-MM-dd HH:mm:ss.fff}", DateTime.Now);
+            var cmd = string.Empty;
 
-            var msg = @"The network path was not found
+            while ((cmd = Console.ReadLine()) != "q")
+            {
+                logger.Info("TEST: {0:yyyy-MM-dd HH:mm:ss.fff}", DateTime.Now);
+                logger.Warn("TEST: {0:yyyy-MM-dd HH:mm:ss.fff}", DateTime.Now);
+
+                var msg = @"The network path was not found
    at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
    at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
@@ -36,11 +40,10 @@ namespace NLog.SlackTarget.TestConsole
 ClientConnectionId:00000000-0000-0000-0000-000000000000
 Error Number:53,State:0,Class:20";
 
-            logger.Error(msg);
+                logger.Error(msg);
 
-            logger.Fatal("TEST: {0:yyyy-MM-dd HH:mm:ss.fff}", DateTime.Now);
-
-            Console.Read();
+                logger.Fatal("TEST: {0:yyyy-MM-dd HH:mm:ss.fff}", DateTime.Now);
+            }
         }
     }
 }
