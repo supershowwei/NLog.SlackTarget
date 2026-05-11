@@ -44,7 +44,7 @@ namespace NLog.Targets
                           {
                               Channel = this.Channel,
                               Text = $"{header}\n{renderedMessage.SmsTruncate()}",
-                              Blocks = new List<Payload.Block>
+                              Blocks = new List<object>
                                        {
                                            new Payload.HeaderBlock { Text = new Payload.TextObject { Type = "plain_text", Text = header } },
                                            new Payload.MarkdownBlock { Text = $"```\n{renderedMessage}\n```" }

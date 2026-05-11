@@ -8,7 +8,7 @@ namespace NLog.Targets
 
         public string Text { get; set; }
 
-        public List<Block> Blocks { get; set; }
+        public List<object> Blocks { get; set; }
 
         internal abstract class Block
         {
