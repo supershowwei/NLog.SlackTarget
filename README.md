@@ -10,7 +10,8 @@ This is NLog target for Slack, check following configuration:
   </extensions>
   <targets async="true">
     <target name="Slack" xsi:type="Slack"
-            webhookUrl="https://hooks.slack.com/services/xxx/yyy/zzz"
+            token="{OAuth Token}"
+            channel="{Channel ID}"
             layout="${message}" />
   </targets>
   <rules>
